@@ -18,12 +18,12 @@ class Teste_Produtos():
     def test_selecionar_produto(self):
         self.driver.get("https://www.saucedemo.com/")
         self.driver.set_window_size(1382,784)
-        self.driver.find_element(By.ID, "user-name").click()
+        self.driver.find_element(By.ID, "user-name").click() #
         self.driver.find_element(By.ID, "user-name").send_keys("standard_user")
         self.driver.find_element(By.ID, "password").click()
         self.driver.find_element(By.ID, "password").send_keys("secret_sauce")
         self.driver.find_element(By.NAME, "login-button").click()
-
+        
 
 
     
